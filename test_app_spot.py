@@ -6,7 +6,7 @@ from src.selenium import SeleniumSrc
 class TestAppSpot(unittest.TestCase):
 
     def setUp(self):
-        self.selenium_obj = SeleniumSrc(browser='chrome')
+        self.selenium_obj = SeleniumSrc(browser='firefox')
 
     def test_app_spot(self):
         self.selenium_obj.open_webpage(url="http://ata123456789123456789.appspot.com/")
